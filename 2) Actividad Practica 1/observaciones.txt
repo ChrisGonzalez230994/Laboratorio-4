@@ -1,0 +1,23 @@
+static
+El elemento se posiciona según el flujo normal del documento. Las propiedades top, right, bottom, lefty no tienen efecto . 
+Este es el valor predeterminado.z-index
+
+relative
+El elemento se posiciona según el flujo normal del documento y se desplaza respecto a sí mismo según los valores de top, right, bottomy left. El desplazamiento no afecta la posición de ningún otro elemento; por lo tanto, el espacio asignado al elemento en el diseño de página es el mismo que si la posición fuera static.
+
+Este valor crea un nuevo contexto de apilamiento cuando el valor de z-indexno es auto. Su efecto sobre los elementos table-*-group, table-row, table-column, table-celly table-captionno está definido.
+
+absolute
+El elemento se elimina del flujo normal del documento y no se crea espacio para él en el diseño de página. El elemento se posiciona con respecto a su antecesor más cercano (si lo hay) o al bloque contenedor inicial . Su posición final se determina mediante los valores de top, right, bottomy left.
+
+Este valor crea un nuevo contexto de apilamiento cuando el valor de z-indexno es auto. Los márgenes de las cajas con posicionamiento absoluto no se contraen con otros márgenes.
+
+fixed
+El elemento se elimina del flujo normal del documento y no se crea espacio para él en el diseño de página. Se posiciona con respecto a su bloque contenedor inicial , que es la ventana gráfica en el caso de los medios visuales. Su posición final se determina mediante los valores de top, right, bottomy left.
+
+Este valor siempre crea un nuevo contexto de apilamiento . En documentos impresos, el elemento se coloca en la misma posición en cada página .
+
+sticky
+El elemento se posiciona según el flujo normal del documento y se desplaza con respecto a su ancestro de desplazamiento más cercano y al bloque contenedor (ancestro a nivel de bloque más cercano), incluyendo los elementos relacionados con la tabla, según los valores de top, right, bottomy left. El desplazamiento no afecta la posición de ningún otro elemento.
+
+Este valor siempre crea un nuevo contexto de apilamiento . Tenga en cuenta que un elemento persistente se adhiere a su ancestro más cercano con un mecanismo de desplazamiento (creado cuando overflowes hidden, scroll, autoo overlay), incluso si ese ancestro no es el ancestro con desplazamiento real más cercano.

@@ -1,57 +1,65 @@
+/**/
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     position: relative;
-    font-family: Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+/*parte del formato en comun entre el header y footer*/
 header, footer {
-    background-color:tan;
+    background-color:cadetblue;
     color: white;
-    text-align: center;
     padding: 15px;
 }
-
+/*parte de formato del header de todas las paginas*/
 header {
-    position: fixed;
+    position:fixed;
     top: 0;
-    width: 100%;
+    text-align:right;
+    width: 99%;
 }
 
+/*parte del formato del footer de todas las paginas*/
 footer {
-    position: fixed;
+    position:fixed;
     bottom: 0;
+    text-align:center;
     width: 100%;
 }
-
+/*este es el formato de lo que esta en el centro del la pagina*/
 main {
-    padding-top: 80px;   /* espacio por el header fijo */
+    padding-top: 100px;   /* espacio por el header fijo */
     padding-bottom: 60px; /* espacio por el footer fijo */
-    text-align: center;
+    text-align:center;
 }
-
+/*Formato de de la palabas "Inicio de sesion" y "Registro"*/
 header a {
-    color:gainsboro;
-    margin: 0 15px;
+    color:azure;
+    margin: 10px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight:bolder
 }
 
+/*formato del header para que las palabras se pinten de negro y se subrayen cada vez que el cursor esta encima*/
 header a:hover {
     text-decoration: underline;
+    color: black;
 }
 
+/*formato de la imagen en la pagina del inicio*/
 img {
-    max-width: 400px;
+    max-width: 700px;
     height: auto;
 }
 
+/*formato del formulario*/
 form {
     display: inline-block;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 0%;
 }
+
 
 form label, form input {
     display: block;
