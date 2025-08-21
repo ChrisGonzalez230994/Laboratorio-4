@@ -1,0 +1,11 @@
+name = ´chris´(con las comillas inclinadas podemos hacer esta concatenación)
+hello ${name}
+
+la función prompt 
+llama a una caja de texto y retorna la caja de texto, Tipo ventana emergente
+
+Title es la unica etiqueta del archivo que el usuario puede ver
+
+podemos abrir el archivo manualmente escribiendo en el buscador "localhost:5500"
+
+La diferencia de hacer el script en el head 
