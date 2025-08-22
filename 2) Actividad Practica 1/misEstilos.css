@@ -22,7 +22,7 @@ header {
 
 /*parte del formato del footer de todas las paginas*/
 footer {
-    position:fixed;
+    position:static;
     bottom: 0;
     text-align:center;
     width: 100%;

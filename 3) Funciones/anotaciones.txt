@@ -1,0 +1,63 @@
+• Funciones
+
+- function
+funcion es la palabra reservada para funciones
+
+- Arrowfuction son mas pesadas, son mas especificas. 
+    const square = (x) => x * x;
+ver que parametros tiene la funcion, para saber si hay que integrar{}
+
+-parametros opcionales
+en una funcion podemos pasarle parametros de mas y no va a tirar error
+
+
+
+• Obejetos
+
+const obj = {};
+const person = {
+	name: 'juan',
+	[Symbol("id")]: 123
+};
+
+
+JSON.parse
+JSON.stringify
+
+🔹JSON.stringify()
+
+Convierte un objeto de JavaScript a una cadena JSON (texto).
+
+Se usa cuando quieres guardar, enviar o almacenar datos (por ejemplo, en un archivo, en una base de datos o al enviarlos a un servidor).
+
+Ejemplo:
+
+const persona = { nombre: "Ana", edad: 25 };
+const json = JSON.stringify(persona);
+
+console.log(json); 
+// Resultado: '{"nombre":"Ana","edad":25}'  (string, no objeto)
+
+🔹 JSON.parse()
+
+Convierte una cadena JSON a un objeto de JavaScript.
+
+Se usa cuando recibes datos en formato JSON (por ejemplo, desde una API o archivo) y necesitas trabajar con ellos en tu código.
+
+Ejemplo:
+
+const json = '{"nombre":"Ana","edad":25}';
+const persona = JSON.parse(json);
+
+console.log(persona.nombre); // Resultado: Ana
+console.log(persona.edad);   // Resultado: 25
+
+⚖️ Resumen rápido
+
+JSON.stringify(objeto) → Objeto JS ➝ Cadena JSON
+
+JSON.parse(cadena) → Cadena JSON ➝ Objeto JS
+
+
+
+
