@@ -1,3 +1,7 @@
+/**
+ * EJERCICIOS DE SUMA RANGO
+ */
+
 /*
 La suma de un rango
 1) Escribir la función range que tome dos argumentos, start y end y retorne un arreglo conteniendo todos los numeros desde start hasta end inclusive.
@@ -27,14 +31,18 @@ function range(start, end, step = 1) {
       arr.push(i);
     }
   }
-
   return arr;
 }
+
+/*Salidas por consola*/
 console.log(range(1,10,));
+console.log(range(10,1,-1));
 
-console.log(range(10,2,-1));
-
-
+/**
+ * 
+ * @param {number[]} arr - Arreglo de números a sumar
+ * @returns {number} La suma de los valores en el arreglo
+ */
 function suma(arr){
     let total = 0;
     for(let num of arr){
@@ -43,15 +51,43 @@ function suma(arr){
     return total;
 }
 
+/**
+ * 
+ * @param {number} entero1 - Entero 1
+ * @param {number} entero2 - Entero 2
+ * @returns {number} - Resultado de la suma entre el entero 1 y el entero 2
+ */
+function sumaEnteros(entero1, entero2){
+  return entero1 + entero2;
+}
+
+/*Salidas por consola*/
 console.log(`La suma es: ${suma(range(1, 10))}`);
+console.log(`La suma es: ${sumaEnteros(3,4)}`);
 
 
 
+
+
+/**
+ * EJERCICIO SE INVERTIR UN ARREGLO
+ */
 /*
 Invertir un arreglo
 Los arreglos tienen Array.reverse(), pero a modo de ejercicio escribir reverseArray y reverseArrayInPlace.
+*/
+
+function reverseArray(arr){
+  let invertido = [];
+  for(let i = arr.lenght - 1; i>= 0; i--){
+    invertido.push(arr[i]);
+  }
+  return invertido
+}
+
 let myArray = ["A", "B", "C"];
 console.log(reverseArray(myArray));
+
 
 // ["C", "B", "A"];
 console.log(myArray);
@@ -61,7 +97,6 @@ let arrayValue = [1, 2, 3, 4, 5];
 reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
 // [5, 4, 3, 2, 1]
-*/
 
 
 
