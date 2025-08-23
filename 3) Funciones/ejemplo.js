@@ -79,19 +79,22 @@ Los arreglos tienen Array.reverse(), pero a modo de ejercicio escribir reverseAr
 
 function reverseArray(arr){
   let invertido = [];
+  let i2=0;
   for(let i = arr.lenght - 1; i>= 0; i--){
     invertido.push(arr[i]);
+    i2++;
   }
   return invertido
 }
-
 let myArray = ["A", "B", "C"];
+
+
+
 console.log(reverseArray(myArray));
-
-
 // ["C", "B", "A"];
 console.log(myArray);
 
+console.log(reverseArray(myArray));
 // ["A", "B", "C"];
 let arrayValue = [1, 2, 3, 4, 5];
 reverseArrayInPlace(arrayValue);
