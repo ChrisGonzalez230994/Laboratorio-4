@@ -72,34 +72,70 @@ console.log(`La suma es: ${sumaEnteros(3,4)}`);
 /**
  * EJERCICIO SE INVERTIR UN ARREGLO
  */
-/*
-Invertir un arreglo
-Los arreglos tienen Array.reverse(), pero a modo de ejercicio escribir reverseArray y reverseArrayInPlace.
-*/
 
-function reverseArray(arr){
-  let invertido = [];
-  let i2=0;
-  for(let i = arr.lenght - 1; i>= 0; i--){
-    invertido.push(arr[i]);
-    i2++;
+// 1. Devuelve un nuevo arreglo invertido
+function reverseArray(arr) {
+  let newArr = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    newArr.push(arr[i]);
   }
-  return invertido
+  return newArr;
 }
+
+// 2. Invierte el arreglo en el mismo lugar (sin crear otro)
+function reverseArrayInPlace(arr) {
+  let left = 0;
+  let right = arr.length - 1;
+
+  while (left < right) {
+
+    let temp = arr[left];
+    arr[left] = arr[right];
+    arr[right] = temp;
+
+    left++;
+    right--;
+  }
+  return arr;
+}
+
+// Pruebas
 let myArray = ["A", "B", "C"];
+console.log(reverseArray(myArray)); // ["C", "B", "A"]
+console.log(myArray);              // ["A", "B", "C"]
 
-
-
-console.log(reverseArray(myArray));
-// ["C", "B", "A"];
-console.log(myArray);
-
-console.log(reverseArray(myArray));
-// ["A", "B", "C"];
 let arrayValue = [1, 2, 3, 4, 5];
 reverseArrayInPlace(arrayValue);
-console.log(arrayValue);
-// [5, 4, 3, 2, 1]
+console.log(arrayValue);           // [5, 4, 3, 2, 1]
 
 
 
+//LISTAS
+/*
+Escribir las funciones **arrayToList**, **listToArray**, **prepend** y **nth**. 
+
+*“the nth element” significa “el enésimo elemento”*
+
+arrayToList(array) debe recibir un arreglo y retornar un objeto como en el ejemplo.
+
+listToArray(list) debe retornar un arreglo a partir de una lista.
+
+prepend(element, list) es una función auxiliar para insertar un elemento al comienzo de una lista.
+
+nth(list, index) debe retornar el elemento en el índice suscripto o undefined si no se encuentra. 
+Esta es una buena oportunidad para hacer una versión recursiva de nth.
+*/
+
+
+
+
+let list = {
+  value: 1,
+  next: {
+    value: 2,
+    next: {
+      value: 3,
+      next: null
+    }
+  }
+};
