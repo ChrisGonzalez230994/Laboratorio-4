@@ -127,15 +127,46 @@ Esta es una buena oportunidad para hacer una versión recursiva de nth.
 */
 
 
-
-
-let list = {
-  value: 1,
-  next: {
-    value: 2,
-    next: {
-      value: 3,
-      next: null
-    }
+// Convierte un array en una lista enlazada
+function arrayToList(array) {
+  let list = null;
+  for (let i = array.length - 1; i >= 0; i--) {
+    list = { value: array[i], next: list };
   }
-};
+  return list;
+}
+
+// Convierte una lista enlazada en un array
+function listToArray(list) {
+  let array = [];
+  for (let node = list; node !== null; node = node.next) {
+    array.push(node.value);
+  }
+  return array;
+}
+
+// Inserta un elemento al inicio de la lista
+function prepend(element, list) {
+  return { value: element, next: list };
+}
+
+// Retorna el enésimo elemento de la lista
+function nth(list, index) {
+  if (!list) return undefined;       // caso base: lista vacía
+  if (index === 0) return list.value; // caso base: índice encontrado
+  return nth(list.next, index - 1);   // recursión
+}
+
+
+// ----------------- PRUEBAS -----------------
+console.log(arrayToList([10, 20]));
+// {value: 10, next: {value: 20, next: null}}
+
+console.log(listToArray(arrayToList([10, 20, 30])));
+// [10, 20, 30]
+
+console.log(prepend(10, prepend(20, null)));
+// {value: 10, next: {value: 20, next: null}}
+
+console.log(nth(arrayToList([10, 20, 30]), 1));
+// 20
