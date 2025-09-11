@@ -1,0 +1,32 @@
+Estructura HTML
+El tener una buena estructura y la ubicacion correcta
+de las etiquetas obtenemos ventajas:
+• el codigo sera mas facil de ller y de modificar
+• el sitio web tendrá mejor posicionamiento en buscadores
+
+
+        <header>
+        <nav>
+    <main>
+    <section>   <aside>
+    <section>
+        <footer>
+
+
+Header = cabecera, encabezado de pagina
+Nav = sector de navegacion, lupita buscador, home, nosotros, inicio de sesion
+
+Main= donde se ecuentran los section y aside
+Section = lugar donde va a ir la info
+Asaide = indice al costado 
+
+Footer = lugar donde estan los datos de la empresa, telefono , contacto
+
+
+REglas 
+main uno por archivo
+
+article= usamos para enmarcar contenido principal
+section = contenido que no es principal
+
+  

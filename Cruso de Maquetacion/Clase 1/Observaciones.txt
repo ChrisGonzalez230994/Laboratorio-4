@@ -1,0 +1,39 @@
+HEAD es todo lo que tiene que ver con los metadatos
+Es un espacio de configuración de nuestra pagina
+• Etiquetas meta
+• Titulo
+• Enlaces a recursos externos utilizados en nuesta paágina
+• Scripts necesarios para el funcionamento del HTML
+
+
+<meta name="keywords" content="Html, Css, Javascript" />
+
+
+
+
+BODY contenido visible de la pagina web
+<pre> 
+ podemos darle el mismo estilo que el que estamos escribiendo 
+
+<img>
+alt = "texto alternativo" por si falla la imagen se muestra el texto
+
+<figure>
+<figure>
+    <figcaption> sirve para que la descripcion que este dentro
+    de esta etiqueta figure en los motores de busqueda
+    </figcaption>
+</figure>
+
+
+<video>
+usamos esta etiqueta cuando el video lo tenemos alojado en nuestra compu
+
+<iframe>
+Lo usamos para poder linkear video de otras plataformas, como ser un
+video de Youtube.
+
+<label>
+
+
+
