@@ -1,0 +1,8 @@
+Formularios son importantes para la interaccion con el usuario y la recopilacion de info
+
+    form= inicio de un formulario
+    action= URL a la que se enviarán los datos del formulario cuando el usuario lo envié
+    method= metodo HTTP a usar para enviar los datos("post" o "get")
+    label= para etiquetar los campos de entrada para describir qué tipo de dato se espera que el usuario ingrese
+    input= para crear campos de entrada interactivos donde los usuarios pueden ingresar datos
+    type= tipo de campo de entrada

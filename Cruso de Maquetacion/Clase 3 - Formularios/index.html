@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+    form= inicio de un formulario
+    action= URL a la que se enviarán los datos del formulario cuando el usuario lo envié
+    method= metodo HTTP a usar para enviar los datos("post" o "get")
+    label= para etiquetar los campos de entrada para describir qué tipo de dato se espera que el usuario ingrese
+    input= para crear campos de entrada interactivos donde los usuarios pueden ingresar datos
+    type= tipo de campo de entrada    
+    -->
+    <form action="contact.html" method="get">
+
+        <label for="nombre">Nombre....................: </label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="edad">Edad.........................: </label>
+        <input type="number" id="edad" name="edad" placeholder="edad mayor a 18"><br>
+
+        <label for="altura">Altura.......................: </label>
+        <input type="number" id="altura" name="altura" step="any"><br>
+
+        <label for="correo">Correo......................: </label>
+        <input type="email" id="correo" name="correo"><br>
+
+        <label for="pass">Contraseña...............: </label>
+        <input type="password" id="pass" name="pass"><br>
+
+        <label for="fecha">Fecha de nacimiento: </label>
+        <input type="date" id="fecha" name="fecha"><br>
+
+        <label for="doc">Archivo adjunto.......: </label>
+        <input type="file" id="doc" name="doc"><br><br>
+
+
+        <label for="hobbies">Hobbies :</label><br>
+        <input type="checkbox" value="Correr">Correr<br>
+        <input type="checkbox" value="Correr">Estudiar<br>
+        <input type="checkbox" value="Correr">Programar<br>
+        <input type="checkbox" value="Correr">Cocinar<br><br>
+
+        <label for="idiomas">Idiomas</label>
+        <Select name="Idiomas" id="idiomas">
+            <option value="Español"> Español </option>
+            <option value="Ingles"> Ingles </option>
+            <option value="Portugues"> Portugues </option>
+            <option value="Chino"> Chino </option>
+        </Select><br><br>
+
+        <label for="sexo">Sexo: </label><br>
+        <input type="radio" name="sexo">Femenino<br>
+        <input type="radio" name="sexo">Masculino<br><br><br><br>
+
+
+
+        <label for="submit">Enviar formulario</label>
+        <input type="submit" name="submit" id="submit">
+
+    </form>
+</body>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
