@@ -1,0 +1,4 @@
+para editar un <p>
+color 
+font-size
+
